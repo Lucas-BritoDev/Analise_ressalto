@@ -92,13 +92,4 @@ O dashboard interativo, construído com Streamlit, visa realizar uma análise ex
 
 Contribuições são bem-vindas! Se você tiver sugestões para melhorar este projeto, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
 
-## 👨‍💻 Autor
 
-* [Seu Nome Aqui]
-* **LinkedIn:** [Seu LinkedIn Aqui (opcional)]
-* **GitHub:** [Seu GitHub Aqui (opcional)]
-* **Agradecimento:** À minha irmã, por fornecer os dados e o contexto acadêmico para este projeto de análise.
-
-## 📄 Licença
-
-Este projeto é distribuído sob a licença MIT (ou outra de sua escolha). Veja o arquivo `LICENSE` para mais detalhes (você pode adicionar um arquivo LICENSE.md com o texto da licença, se desejar).
