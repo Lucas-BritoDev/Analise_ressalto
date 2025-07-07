@@ -1,0 +1,2 @@
+# Dependências do sistema necessárias para o projeto
+# Este arquivo é usado pelo Streamlit Cloud para instalar pacotes do sistema 

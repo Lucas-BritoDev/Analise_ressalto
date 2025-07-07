@@ -1,23 +1,52 @@
-[tool.poetry]
-name = "analise-banco"
-version = "0.1.0"
-description = ""
-authors = ["Lucas-Brito-Dev <lucasbrito_dev@outlook.com.br>"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-pandas = "^2.2.3"
-numpy = "^2.2.5"
-streamlit = "^1.45.0"
-plotly = "^6.0.1"
-statsmodels = "^0.14.4"
-openpyxl = "^3.1.5"
-xlsxwriter = "^3.2.3"
-seaborn = "^0.13.2"
-scikit-learn = "^1.6.1"
-
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analise-ressalto-hidraulico"
+version = "1.0.0"
+description = "Análise de dados de ressalto hidráulico com Streamlit"
+authors = [
+    {name = "Analista de Dados", email = "analista@exemplo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "streamlit>=1.28.0",
+    "pandas>=1.5.0",
+    "numpy>=1.21.0",
+    "plotly>=5.15.0",
+    "scipy>=1.9.0",
+    "statsmodels>=0.13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["analise_ressalto*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
